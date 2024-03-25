@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "My Work Data Journalism",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "My Work Data Journalism"
+	}
+}
