@@ -1,0 +1,34 @@
+/*to center any content*/
+.content {
+    text-align: center;
+  }
+
+  /*font*/
+  body {
+    font-family: 'Maitree', serif; 
+  }
+
+  /*progressbar*/
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #533218;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #25aa04;
+    width: 0%;
+  }
+  
+  
