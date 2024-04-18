@@ -1,15 +1,25 @@
-/*to center any content*/
-.content {
-    text-align: center;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Maitree, serif;
+  overflow-y: auto; /* Enable vertical scrolling for the entire webpage */
+}
 
-  /*font*/
-  body {
-    font-family: 'Maitree', serif; 
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.newspaper-column {
+  max-width: 600px; /* Set maximum width for the column */
+  padding: 20px; /* Add padding for better readability */
+  margin-top: 1500px;
+}
 
   /*progressbar*/
-  .header {
+  .barheader {
     position: fixed;
     top: 0;
     z-index: 1;
@@ -30,5 +40,6 @@
     background: #25aa04;
     width: 0%;
   }
+
   
   
