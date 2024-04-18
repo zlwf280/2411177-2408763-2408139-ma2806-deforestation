@@ -19,7 +19,7 @@ function cleanData(data){
 }
 
 function draw(){
-    background(255);
+    background(0, 0);
     //insert loop for concentric circles that nests another function for treeRings (imperfect circles)
     for (var r = 0; r < 350; r = r + 50){
         fill(102, 51, 0, 75);
