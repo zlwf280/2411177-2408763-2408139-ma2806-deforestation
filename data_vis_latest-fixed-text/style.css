@@ -73,18 +73,35 @@ canvas{
     justify-content: center;
   }
 
-  .container {
+  .first-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Set the container height to full viewport height */
+    margin-top: 100px;
   }
   
-  .newspaper-column {
+  .first-column {
     max-width: 600px; /* column width*/
     position: relative;
     padding: 5px; 
     height: 100vh;
     margin-top: 100px;
-    margin-bottom: 100px;
+  }
+
+  .second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the container height to full viewport height */
+    margin-top: 800px;
+    position:relative;
+  }
+  
+  .second-column {
+    max-width: 600px; /* column width*/
+    position: relative;
+    padding: 5px; 
+    height: 100vh;
+    margin-top: 800px;
   }
