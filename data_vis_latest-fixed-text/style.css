@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: auto;
+  }
+
+canvas{
+    margin: 0px;
+    padding: 0;
+  }
+
+  #visualisation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+#canvas-container{
+    font-family: sans-serif;
+  }
+  
+#context-container{
+    font-family: sans-serif;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
