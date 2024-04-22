@@ -25,8 +25,9 @@ function setup() {
     //createCanvas(size, size);
 
     visualisation = createCanvas(size, size);
-    //visualisation.position(500, 500); // !!!!! code to move graphs, there's a massive white space above so please account for that as it will lay on top of text from html !!!!!
+    //visualisation.position(170, 800); // !!!!! code to move graphs, there's a massive white space above so please account for that as it will lay on top of text from html !!!!!
     visualisation.parent("canvas-tag"); //index.html
+
 
     //textFont(font); !!!!! just un-comment this when font is loaded !!!!!
 
@@ -68,7 +69,7 @@ function cleanData(dataset) {
 //}
 
 function draw() {
-    background(255);
+    background(255, 0, 0, 0);
     fill(55);
     strokeWeight(1);
 

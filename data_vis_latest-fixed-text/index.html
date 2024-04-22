@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Deforestation</title>
+    <title>The Alarming Rate of Deforestation</title>
     <!--p5.js-->
     <script src="p5.js"></script>
     <script src="sketch.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css" />
-
+    <!-- Font Download -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!--load map IGNORE-->
     <!--<script src="./mappa.js" type="text/javascript"></script>-->
 
   </head>
 
   <body>
+    <script src="progressbar.js"></script> 
+<!-- Progress bar
+    <div class="barheader"></div>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  -->
 
-    <!--main header-->
-    <div>
-      <h1>The Alarming Rate of Deforestation</h1>
+    <!--CONTENT STARTS HERE-->
+    <div class="container">
+      <div class="newspaper-column">
+      <h1><u>The Alarming Rate of Deforestation</u></h1>
+
+        <!--introduction paragraph-->
+        <p>In an era tainted by drastic, dire changes in our environment, our project’s aim is to shed light on this fluctuation, but through the lens of the unrelenting pace of deforestation that is changing our landscapes. Our research question is: How has the extent and nature of deforestation evolved over the last century, and will there be trends to help understand our future? 
+          <br><br>
+          We are highlighting our blurred understanding of deforestation and its vast impact, attempting to elaborate on its importance through a mixture of engaging visualisation and written theoretical text. Through an in-depth graphical analysis of deforestation trends during the last century, we want to decipher the intricate story of environmental degradation and its global ramifications. 
+          <br><br>
+          This project is not just an effort for the sake of academics, but rather is an investigation of a 
+          misunderstood phenomena by those passionate about stopping its cause, and a call to action that invites audiences to reevaluate our individual and collective environmental policy and motivate activities that support a more ecologically aware and sustainable global community.
+        </p>
+    </div>
     </div>
 
     <!--introduction paragraph-->
-    <div>
-      <h2>Introduction</h2>
-      <p>
-        In an era tainted by drastic, dire changes in our environment, our project’s aim is to shed light on this fluctuation, but through the lens of the unrelenting pace of deforestation that is changing our landscapes. Our research question is: How has the extent and nature of deforestation evolved over the last century, and will there be trends to help understand our future? 
-        <br><br>
-        We are highlighting our blurred understanding of deforestation and its vast impact, attempting to elaborate on its importance through a mixture of engaging visualisation and written theoretical text. Through an in-depth graphical analysis of deforestation trends during the last century, we want to decipher the intricate story of environmental degradation and its global ramifications. 
-        <br><br>
-        This project is not just an effort for the sake of academics, but rather is an investigation of a 
-        misunderstood phenomena by those passionate about stopping its cause, and a call to action that invites audiences to reevaluate our individual and collective environmental policy and motivate activities that support a more ecologically aware and sustainable global community.
-      </p>
-
+    <div class="container">
+      <div class="newspaper-column">
       <h2>Data Disclaimer</h2>
       <p>
-        The Global Forest Review (GFR) is an impartial evaluation of the state of the world's forests since 2001 that uses extensive geospatial data and analysis and is the main source of data used in this project. To ensure a high degree of accuracy, their analysis makes use of hundreds of different datasets in addition to sophisticated satellite images. However, limitations in forecasting models, difficulties characterising deforestation, and differences in methodology could lead to possible disparities. In spite of this, the project's study on deforestation trends has a solid base due to the WRI's comprehensive validation process.
+        <a href="https://research.wri.org/gfr/global-forest-review" target="_blank">The Global Forest Review</a> is an impartial evaluation of the state of the world's forests since 2001 that uses extensive geospatial data and analysis and is the main source of data used in this project. To ensure a high degree of accuracy, their analysis makes use of hundreds of different datasets in addition to sophisticated satellite images. However, limitations in forecasting models, difficulties characterising deforestation, and differences in methodology could lead to possible disparities. In spite of this, the project's study on deforestation trends has a solid base due to the WRI's comprehensive validation process.
       </p>
 
       <h2>'Tree Cover Loss'</h2>
       <p>
         The term "tree cover loss" describes the removal or reduction of trees in a given area, frequently as a result of human activity like logging, increased agricultural production, or infrastructure development. Natural disasters like wildfires and disease outbreaks might also be the cause of it. When the amount of forest cover is lost at a rate that drastically lowers the total amount of forested area, it is considered deforestation and causes habitat damage, biodiversity loss, soil erosion, and higher carbon emissions. Therefore, one of the most important metrics for tracking and evaluating the degree of deforestation and its effects on the environment is the loss of tree cover.
       </p>
+    </div>
+    </div>
 
+
+    <section id="visualisation">
+      <script src="https://cdn.jsdelivr.net/npm/p5"></script>
+          <!--canvas-->
+          <div id="canvas-tag"></div>
+          <!--context-->
+          <div id="context-tag"></div>
+    </section>
+
+
+    <div class="container">
+    <div class="newspaper-column">
+      <br><br>
       <h2>Top 9 Countries With the Highest Total Sum of Tree Forest Loss, 2001-2021 (million hectares)</h2>
       <p>
         Russia - 80.3 million hectares<br>
@@ -59,27 +85,109 @@
         The startling discovery that Russia has greater rates of deforestation than Brazil contradicts widely held beliefs. Russia's boreal forests and other important biomes have been overlooked by the exclusive focus on the Amazon Rainforest, frequently at the forefront of talks over deforestation. Despite being essential carbon sinks and biodiversity repositories, these Siberian forests get little attention. This surprising rating emphasises how important it is to increase our knowledge and consciousness of deforestation. 
         Here is some more vital information surrounding each of these countries:
       </p>
-
+ 
       <h3>Russia</h3>
       <p>
         With over 45% of its land area covered in natural forest, the shock of Russia being the leading country in deforestation rates is further multiplied with the counteractive percentage of ‘loss likely to be permanent’: 0%. This surprisingly points to a chance for recovery and sustainability in Russian forestry methods and indicates a great potential for natural or assisted regeneration. Regardless, this loss is primarily in Siberia, linked to logging (illegal or not), wildfires and more.
       </p>
 
+      <h3>Brazil</h3>
+      <p>
+        Focused on the Amazon primarily, Brazil makes up for over 40% of global deforestation, and over 60% of it is permanent. There is little information about surrounding biomes around the Amazon Rainforest. While coined as the ‘Lungs of the Earth’ time ago, it is with this commodity driven deforestation that instead turns those lungs into a carbon source.
+      </p>
+
+      <h3>Canada</h3>
+      <p>
+        In addition to being major carbon sinks, Canada's boreal (Taiga) woods are home to numerous kinds of wildlife, ecosystems and primarily indigenous cultures. Losing 14% of tree cover since 2000 primarily due to agriculture and resource extraction may take the loss of indigenous land into account, but not the impact to the community: which is detrimental. Thousands of years of culture and history reside within these woodlands, torn apart and lost to deforestation. For example: ‘the Waswanipi Cree First Nation’ who have lost <a href="https://www.greenpeace.org/usa/stories/what-i-learned-from-an-indigenous-communitys-fight-to-save-canadas-boreal-forest/" target="_blank">90% of their territory.</a>
+      </p>
+
+      <h3>United States of America</h3>
+      <p>
+        Taking the increase of wildfires in the United States into account (404,284 fire alerts within the last four years alone), the cause of tree cover loss in the US is primarily for the sake of forestry. Forestry is the process of creating, maintaining, replanting, using, preserving, and restoring forests and woodlands for related resources that benefit people and the environment, often done in plantations and natural stands. This highlights a surprisingly positive aspect of the US’s deforestation rate. 
+      </p>
+
+      <h3>Indonesia</h3>
+      <p>
+        Driven primarily by the influence/economy available with palm oil cultivation, logging and more, Indonesia’s seemingly justified tree cover loss is undone by the shocking 95% of loss likely to be permanent. With this forest land extending across over 50% of the country, it is difficult to truly criticise the struggling, developing country for their need for income through deforestation.
+      </p>
+
+      <h3>Democratic Republic of Congo</h3>
+      <p>
+        Home of the world’s second-largest tropical rainforest, similarly to Indonesia, Congo are surrendering their rainforests to logging, fuelwood harvesting, and subsistence farming. Whether through illegal logging or other methods, <a href="https://forestsnews.cifor.org/79903/over-a-quarter-of-congo-basin-forests-at-risk-of-vanishing-by-2050?fnl=" target="_blank">27% of undisturbed rainforests in the Congo Basin present in 2020 will disappear by 2050</a> , endangering the ecological balance and way of life for local communities.
+      </p>
+
+      <h3>China</h3>
+      <p>
+        With a constantly growing economy, China is the second-biggest importer of palm oil and the top importer of soy, livestock, and forest products. Their rate of deforestation is primarily linked to Forestry (just as the US), and with only 1% of the loss permanent, China can be condemned for their attempts at maintaining a biodiverse balance. Alongside their development as a country, they have also attempted to develop their laws on deforestation, such as the 2020 revision of its Forestry Law - where a revised law now reads <a href="https://news.mongabay.com/2020/03/chinas-revised-forest-law-could-boost-efforts-to-fight-illegal-logging/#:~:text=Article%2065%20of%20the%20revised,force%20on%20July%201%2C%202020." target="_blank">“No unit or individual may purchase, process or transport timber that he/she clearly knows was piratically felled or indiscriminately felled in forest regions.”</a>
+      </p>
+
+      <h3>Malaysia</h3>
+      <p>
+        Similar to Indonesia both in its reasoning for deforestation and also its 95% likelihood of permanence, Malaysia have lost 31% of their forests since 2000 - primarily by commodity driven deforestation. Over 8 million hectares of land are disturbed, let alone lost entirely, affecting environment and wildlife: such as the Sumatran rhino, Malayan tiger and more.
+      </p>
+
+      <h3>Australia</h3>
+      <p>
+        Australia's distinctive wildlife and flora are connected to deforestation and habitat loss, primarily caused by agriculture, and ecosystems are more susceptible to bushfires as a result. Unlike the other countries on the list, Australia is a country prone to wildfires, and therefore the cause for the majority of their deforestation. This natural cause of climate extremes peaked especially in 2022, with nearly 2.4 million hectares affected.
+      </p>
+
+      <h2>Why is all of this Happening?</h2>
+      <p>
+        With all of this information, a common question come to mind: <b>WHY?</b>
+        <br><br>
+        The answer varies, for the reason varies too. Agriculture, logging, urbanisation and more can either be the single or combined cause that drives deforestation around the world. In almost all cases, primarily developing countries like those previously mentioned, it is out of necessity. A necessity to evolve and to grow. Tropical forests are mostly found in poorer nations, but they serve more than just local or national requirements; as a result of economic globalisation, they are also being pressured to suit the needs and desires of people everywhere.
+        <br><br>
+        For thousands of years, people have been clearing forests on Earth in order to make room for something better and bigger, and all notions that relate do not involve nature, but rather technology.
+      </p>        
+
+      <h2>Why Should Happen Instead</h2>
+      <p>
+        While it may be more difficult said than done, nations managing the demands of environmental preservation and development must look for sustainable solutions to deforestation. This entails funding reforestation initiatives, implementing agroforestry techniques that blend farming and tree planting, and enforcing stringent land use laws. 
+        <br><br>
+        Significant roles can also be played by recognising and securing indigenous land rights, enhancing the efficacy of protected areas, and utilising technology to better enforcement and monitoring. Furthermore, it is crucial to move towards a "green economy," in which environmental degradation and economic growth are not correlated. These strategies can protect biodiversity, slow down climate change, and help local communities maintain their way of life.
+      </p>     
+
+      <h1><u>How We Can Help</u></h1>
+      <p>It is essential to take part in both educational and practical initiatives in order to effectively battle deforestation. A foundation for long-lasting environmental care is laid by educating both ourselves and others. We can encourage a better informed public that is prepared to take significant action by educating ourselves and others on the problems and solutions related to deforestation. 
+        <br><br>
+        Here are some connections to other sites where you can find opportunities to make a significant difference, both for free and for a fee. The most effective weapon we have is knowledge, which we may use through promoting sustainable behaviours, taking part in reforestation efforts, or raising awareness. 
+      </p>
+
+      <p> 
+        <a href="https://www.thetreeapp.org/" target="_blank">THE TREE APP</a> : A company that will plant a tree for every ad watched.
+      </p>
+
+      <p> 
+        <a href="https://www.ecosia.org/?c=en" target="_blank">ECOSIA</a> : A web browser where every search will lead to a tree planted
+      </p>
+
+      <h3>Donation Links</h3>
+      <p> 
+        <a href="https://preserve.nature.org/page/83246/donate/1?locale=en-US" target="_blank">THE NATURE CONSERVANCY</a>
+      </p>
+
+      <p> 
+        <a href="https://www.rainforesttrust.org/" target="_blank">RAINFOREST TRUST</a>
+      </p>
+
+      <p> 
+        <a href="https://www.worldwildlife.org/initiatives/forests" target="_blank">WWF FORESTS</a>
+      </p>
+
+      <p> 
+        <a href="https://www.amazonconservation.org" target="_blank">AMAZON CONSERVATION ASSOCIATION</a>
+      </p>
+
+      <p> 
+        <a href="https://onetreeplanted.org" target="_blank">ONETREEPLANTED</a>
+      </p>
+    </div>
     </div>
 
+
+
+
+
+  
   </body>
-
-  <section id="visualisation">
-    <h1></h1>
-
-    <!--canvas-->
-    <div id="canvas-tag"></div>
-
-    <!--context-->
-    <div id="context-tag"></div>
-
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/p5"></script>
-
 </html>
