@@ -1,8 +1,15 @@
+header {
+  background-size: cover;
+  text-align: center;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Maitree, serif;
-    overflow-y: auto; /* Enable vertical scrolling for the entire webpage */
+    overflow-y: auto;
+    /* cursor: url("leafcursor.png"); - doesn't work :(*/
+
   }
 
 h1 {
@@ -18,7 +25,7 @@ h3 {
     }
 
 a {
-    color: forestgreen; /
+    color: forestgreen; 
     }
       
 a:hover {
@@ -77,8 +84,9 @@ canvas{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the container height to full viewport height */
-    margin-top: 100px;
+    height: 100vh; 
+    margin-top: 30px;
+    top: 30;
   }
   
   .first-column {
@@ -87,13 +95,14 @@ canvas{
     padding: 5px; 
     height: 100vh;
     margin-top: 100px;
+    top: 30;
   }
 
   .second-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set the container height to full viewport height */
+    height: 100vh; 
     margin-top: 800px;
     position:relative;
   }

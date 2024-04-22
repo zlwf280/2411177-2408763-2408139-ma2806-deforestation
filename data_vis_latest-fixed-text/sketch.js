@@ -25,7 +25,7 @@ function setup() {
     //createCanvas(size, size);
 
     visualisation = createCanvas(size, size);
-    visualisation.position(170, 1000); // !!!!! code to move graphs, there's a massive white space above so please account for that as it will lay on top of text from html !!!!!
+    visualisation.position(170, 1750); // !!!!! code to move graphs, there's a massive white space above so please account for that as it will lay on top of text from html !!!!!
     visualisation.parent("canvas-tag"); //index.html
 
 
