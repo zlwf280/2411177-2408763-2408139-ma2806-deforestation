@@ -26,7 +26,7 @@ function setup() {
     textFont(myFont)
 
     visualisation = createCanvas(size, size);
-    visualisation.position(170, 1850); 
+    visualisation.position(380, 1850); 
     visualisation.parent("canvas-tag"); //index.html
 
 

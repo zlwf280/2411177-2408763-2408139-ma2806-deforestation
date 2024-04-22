@@ -110,7 +110,7 @@ canvas{
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    margin-top: 800px;
+    margin-top: 660px;     /* to change the gap between the graph and the second div*/
     position:relative;
   }
   
@@ -124,5 +124,5 @@ canvas{
     position: relative;
     padding: 5px; 
     height: 100vh;
-    margin-top: 800px;
+    margin-top: 660px;
   }
