@@ -9,9 +9,10 @@ body{
     font-family: Maitree, serif;
     overflow-y: auto;
     /* cursor: url("leafcursor.png"); - doesn't work :(*/
-
   }
 
+
+    /*colouring*/
 h1 {
     color: forestgreen;
     }
@@ -32,7 +33,7 @@ a:hover {
     color: #533218; 
     }
       
-/* progressbar code
+    /* progress bar :(*/
   .barheader {
     z-index: 1;
     width: 100%;
@@ -49,16 +50,15 @@ a:hover {
 }
 
 .progress-bar {
-   background: #25aa04;
+   background: forestgreen;
    width: 0%;
    height: 7px;
-}*/
+}
 
 
 canvas{
     margin: 0px;
     padding: 0;
-    z-index: -1;
   }
 
   #visualisation{
@@ -86,17 +86,24 @@ canvas{
     align-items: center;
     height: 100vh; 
     margin-top: 30px;
-    top: 30;
   }
-  
+
+
+  .first-container img {  /* line graph*/
+    margin: auto;
+    display: block;
+  }
+
   .first-column {
     max-width: 600px; /* column width*/
     position: relative;
+    align-items: center;
     padding: 5px; 
     height: 100vh;
     margin-top: 100px;
-    top: 30;
   }
+
+    /* the divs have been split in two to make room for the visualisation in the middle:(*/
 
   .second-container {
     display: flex;
@@ -107,8 +114,13 @@ canvas{
     position:relative;
   }
   
+  .second-container img {
+    margin: auto;
+    display: block;
+  }
+
   .second-column {
-    max-width: 600px; /* column width*/
+    max-width: 600px; 
     position: relative;
     padding: 5px; 
     height: 100vh;

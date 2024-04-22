@@ -1,4 +1,4 @@
-//let font; !!!!! just un-comment this when font is loaded !!!!!
+let myFont;  
 
 let visualisation;
 let dataset;
@@ -17,19 +17,20 @@ var yValues = [];
 
 function preload() {
     dataset = loadTable("global-tc-loss-adjusted.csv", "csv", "header");
-    //font = loadFont(); !!!!! link to font in brackets, online or from local file
+    myFont = loadFont('Maitree-Regular.ttf');  
 }
 
 function setup() {
     colorMode(RGB);
     //createCanvas(size, size);
+    textFont(myFont)
 
     visualisation = createCanvas(size, size);
-    visualisation.position(170, 1750); // !!!!! code to move graphs, there's a massive white space above so please account for that as it will lay on top of text from html !!!!!
+    visualisation.position(170, 1850); 
     visualisation.parent("canvas-tag"); //index.html
 
 
-    //textFont(font); !!!!! just un-comment this when font is loaded !!!!!
+
 
     infoHeader = createP(); // !!!!! if anyone wants to add interactive text for the graph, just make sure to create new column in .csv file then un-comment line 91, put text in quotes in bracket !!!!! 
     infoHeader.parent("context-tag");
