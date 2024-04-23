@@ -61,7 +61,7 @@ canvas{
     padding: 0;
   }
 
-  #visualisation{
+#visualisation{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -80,7 +80,7 @@ canvas{
     justify-content: center;
   }
 
-  .first-container {
+.first-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,12 +89,12 @@ canvas{
   }
 
 
-  .first-container img {  /* line graph*/
+.first-container img {  /* line break*/
     margin: auto;
     display: block;
   }
 
-  .first-column {
+.first-column {
     max-width: 600px; /* column width*/
     position: relative;
     align-items: center;
@@ -103,9 +103,9 @@ canvas{
     margin-top: 100px;
   }
 
-    /* the divs have been split in two to make room for the visualisation in the middle:(*/
+    /* the divs have been split in two to make room for the visualisation in the middle*/
 
-  .second-container {
+.second-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,12 +114,12 @@ canvas{
     position:relative;
   }
   
-  .second-container img {
+.second-container img { /* line break*/
     margin: auto;
     display: block;
   }
 
-  .second-column {
+.second-column {
     max-width: 600px; 
     position: relative;
     padding: 5px; 
