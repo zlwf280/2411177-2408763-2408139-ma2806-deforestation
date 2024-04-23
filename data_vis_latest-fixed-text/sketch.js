@@ -143,7 +143,7 @@ function treeRings1(radius, steps, centerX, centerY) {
     text('China', size / 3, size / 1.645);
     text('Malaysia', size / 3, size / 1.575);
     text('Australia', size / 3, size / 1.5);
-    text('Total Area (ha) of Tree Cover Loss from 2001-2022', size / 3, size / 1.075);
+    text('Total Area (Mha) of Tree Cover Loss from 2001-2022', size / 3, size / 1.075);
 }
 
 //treeRings 2 _ does not work due to numVertices
