@@ -1,6 +1,6 @@
 # The Alarming Rate of Deforestation
 
-![Screenshot](https://imgur.com/JNcOMYW.png)
+![Screenshot](https://imgur.com/KTMnfif.png)
 ![Screenshot](https://imgur.com/WtBhmhf.png)
 
 **Brief Introduction** In short, our project is an attempt to enlight and teach audiences about the rate of Deforestation, in particularly over our lifetime to show what we have lived through perhaps without even realising. It provides reliable information and statistics that are memorable and clear, collectively becoming a call to action to envoke the need for change to current lifestyles.
